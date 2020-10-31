@@ -2,11 +2,12 @@
 
 
 * You will be able to create, read, update, delete in php.
-* You will understand php data object(PDO). PDO is database agnostic. You can connect any sql database with php. PDO is most recommended way to connect with database.
+* You will understand php data object(PDO). PDO is database agnostic. You can connect any sql database with php.
+PDO is most recommended way to connect with database.
 * You will understand basic php workflow.
 
 
-###First login to mysql and create database and table. to create database and table following code will be necessary.
+### First login to mysql and create database and table. to create database and table following code will be necessary.
 `sql` is not case sensitive.
 We can use sql syntax uppercase and lower case vice versa.
 
@@ -33,7 +34,7 @@ here dsn means data source name. which contain sql driver, database name and hos
 ~~~
 Here we use placeholder in sql statement. We can use `$connection->query()` function directly. Therefore, Here we use `prepare()` statement. Which actually less error prone and secure.
 
-### read
+### Read
 ~~~php
 $sql = 'SELECT * FROM people';
 $statement = $connection->prepare($sql);
